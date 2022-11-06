@@ -1,5 +1,6 @@
 import SignMessage from "./SignMessage";
 import VerifyMessage from "./VerifyMessage";
+import Rating from "./Rating";
 
 export default function App() {
   return (

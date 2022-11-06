@@ -17,7 +17,7 @@ const signMessage = async ({ setError, message }) => {
     return {
       message,
       signature,
-      address
+      address,
     };
   } catch (err) {
     setError(err.message);
@@ -35,7 +35,7 @@ export default function SignMessage() {
     setError();
     const sig = await signMessage({
       setError,
-      message: data.get("message")
+      message: data.get("message"),
     });
     if (sig) {
       setSignatures([...signatures, sig]);
@@ -66,7 +66,7 @@ export default function SignMessage() {
             type="submit"
             className="btn btn-primary submit-button focus:ring focus:outline-none w-full"
           >
-            Sign message
+            Sign message Osama
           </button>
           <ErrorMessage message={error} />
         </footer>
